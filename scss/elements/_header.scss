@@ -1,0 +1,27 @@
+.header_nav {
+    background: $gray;
+
+    .nav-link {
+        padding: 20px 40px;
+        color: $white;
+
+        &.light_gray {
+            background: $lightGray;
+        }
+
+        &.dark_gray {
+            background: $darkGray;
+        }
+
+        &.blue {
+            @include opensansbold;
+            background: $blue;
+        }
+
+        &.orange {
+            background: $orange;
+            padding-left: 70px;
+            padding-right: 70px;
+        }
+    }
+}

@@ -1,0 +1,166 @@
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+    margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 62.5%;
+	min-height: 100%;
+	float: left;
+	width: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: $darkGray;
+    height: 100vh;
+    min-height: 100vh;
+    background: $white;
+	
+	&.fixed {
+		position: fixed;
+	}
+}
+
+.page_wrapper {
+    min-height: 100%;
+
+    &.user_dash {
+
+        @include media($tablet) {
+            min-height: unset;
+        }
+
+        .main_content {
+            padding: 40px 60px 20px 40px;
+
+            @include media($mobile) {
+                padding: 5% 8% 20%;
+            }
+
+            @include media($smallMobile) {
+                overflow-y: scroll;
+            }
+        }
+    }
+}
+
+.full_width {
+	@include span-columns(12);
+}
+
+a {
+	text-decoration: none;
+	/*@include transition(color 1s ease-in);*/
+	cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+.image_wrap.fixed {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    padding: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    flex: none;
+    -ms-flex: none;
+}
+
+.sidebar {
+    min-height: 100%;
+    z-index: 1;
+    min-width: 300px;
+}
+
+.btn {
+    padding: 10px 70px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 20px;
+
+    @include media($tablet) {
+        font-size: 18px;
+    }
+
+    @include media($mobile) {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+
+    &.transparent {
+        color: $orange;
+        border: 1px solid $orange;
+
+        &:hover {
+            background: $orange;
+            color: $white;
+        }
+    }
+
+    &.black {
+        @include opensansbold;
+        background: $black;
+        color: $white;
+
+        &:hover {
+            background: $darkGray;
+        }
+    }
+}
+
+.select.triangle_right {
+    &:after {
+        content: '';
+        background: url('../images/icon-triangle-right.png') no-repeat;
+        position: absolute;
+        right: 20px;
+        top: 42px;
+        width: 9px;
+        height: 14px;
+        background-size: 100%;
+    }
+}
+
+select {
+    -webkit-appearance: none;
+    border: 1px solid $gray;
+    height: 40px;
+    background: $white;
+    color: $textGray;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.form-check-label {
+    margin-left: 6%;
+    padding-top: 4px;
+}
