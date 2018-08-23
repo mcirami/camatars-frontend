@@ -1,4 +1,3 @@
-
 .home_page {
 
     .image_gallery {
@@ -22,11 +21,15 @@
 
                 h3 {
                     font-size: 16px;
+
+                    @include media($tablet) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
 
-        .col a {
+        .column a {
             @include opensansreg;
             @include span-columns(12);
             font-size: 16px;
@@ -38,6 +41,24 @@
             -webkit-border-top-right-radius: 0;
             -moz-border-radius-topright: 0;
             border-top-right-radius: 0;
+
+            @include media($tablet) {
+                font-size: 14px;
+            }
+
+            &.active {
+                background: $blue;
+                color: $white;
+            }
+        }
+    }
+
+    .banner {
+        img {
+            @include media($mobile) {
+                max-width: 100px;
+                float: none;
+            }
         }
     }
 }

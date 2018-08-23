@@ -1,47 +1,170 @@
-.header_nav {
-    background: $gray;
+header {
 
-    .nav-link {
-        padding: 20px 40px;
-        color: $white;
+    img {
+        @include media($tablet) {
+            max-width: 200px;
+        }
+    }
 
-        &.light_gray {
-            background: $lightGray;
+    .btn.black {
+        padding: 10px 70px;
 
-            &:hover {
-                background: $darkGray;
+        @include media($mobile) {
+            width: 100%;
+        }
+    }
+
+    .user_info {
+        p {
+            span {
+                @include opensanssemibold;
+            }
+
+            @include media($tablet) {
+                font-size: 14px;
             }
         }
 
-        &.dark_gray {
-            background: $darkGray;
+        .nav-item {
 
-            &:hover {
-                background: $lightGray;
-            }
-        }
+            &:first-child {
+                a {
+                    &:after {
+                        content: '/';
+                        position: absolute;
+                        right: -3px;
+                        color: $textGray;
+                    }
 
-        &.blue {
-            @include opensansbold;
-            background: $blue;
-
-            &:hover {
-                background: $blueHover;
-            }
-        }
-
-        &.orange {
-            background: $orange;
-            padding: 14px 55px;
-
-            p {
-                line-height: 1;
-                font-size: 12px;
+                    @include media($tablet) {
+                        font-size: 14px;
+                    }
+                }
             }
 
-            &:hover {
-                background: $orangeHover;
+            a {
+                color: $textGray;
+                font-size: 16px;
+                padding: .5rem 24px;
+
+                @include media($tablet) {
+                    padding: .5rem 15px;
+                    font-size: 14px;
+                }
+
+                &:hover {
+                    color: $darkGray;
+                }
+
+                &.btn {
+                    padding: 7px 28px;
+                    color: $orange;
+
+                    @include media($tablet) {
+                        padding: 5px 20px;
+                    }
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
             }
         }
     }
 }
+
+.header_nav {
+    background: $gray;
+
+    .container {
+        @include media($mobile) {
+            max-width: unset;
+        }
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .navbar-toggler {
+        border: 1px solid $white;
+        padding: .25rem 0.55rem;
+        margin-left: 15px;
+    }
+
+    .navbar-expand-md {
+
+        .navbar-nav {
+
+            .nav-link {
+                padding: 20px 40px;
+                color: $white;
+
+                @include media($tablet) {
+                    padding: 15px;
+                    font-size: 14px;
+                }
+
+                &.light_gray {
+                    background: $lightGray;
+
+                    &:hover {
+                        background: $darkGray;
+                    }
+                }
+
+                &.dark_gray {
+                    background: $darkGray;
+
+                    &:hover {
+                        background: $lightGray;
+                    }
+                }
+
+                &.blue {
+                    @include opensansbold;
+                    background: $blue;
+
+                    &:hover {
+                        background: $blueHover;
+                    }
+                }
+
+                &.orange {
+                    background: $orange;
+                    padding: 14px 55px;
+
+                    @include media($tablet) {
+                        padding: 9px 30px;
+                    }
+
+                    p {
+                        line-height: 1;
+                        font-size: 12px;
+                    }
+
+                    &:hover {
+                        background: $orangeHover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#joinNowModal {
+
+    .birthday_select {
+
+        .input-group-addon {
+            width: 32%;
+            margin-right: 2%;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+}
+

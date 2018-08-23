@@ -99,7 +99,7 @@ img {
 }
 
 .btn {
-    padding: 10px 70px;
+    padding: 10px 20px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -107,6 +107,7 @@ img {
 
     @include media($tablet) {
         font-size: 18px;
+        padding: 10px 50px;
     }
 
     @include media($mobile) {

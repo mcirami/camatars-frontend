@@ -5,6 +5,17 @@
     p {
         color: #bfbfbf;
         font-size: 14px;
+
+        @include media($mobile) {
+            font-size: 12px;
+        }
+    }
+
+    img {
+        @include media($mobile) {
+            max-width: 200px;
+            float: none;
+        }
     }
 
     .nav-item {
@@ -12,7 +23,12 @@
         a {
             font-size: 14px;
             color: $textGray;
-            padding: 0px 30px;
+            padding: 0 30px;
+
+            @include media($mobile) {
+                font-size: 12px;
+                padding: 0 15px;
+            }
 
             &:after {
                 content: '/';
