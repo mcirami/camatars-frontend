@@ -46,7 +46,10 @@
 						<a class="nav-link text-uppercase light_gray" href="#">All Models</a>
 						<a class="nav-link text-uppercase dark_gray" href="#">Followed Models</a>
 						<a class="nav-link text-uppercase blue" href="#">Become A Model</a>
-						<a class="nav-link text-uppercase align-self-end ml-auto orange" href="#">Buy Tokens</a>
+						<a class="nav-link text-uppercase align-self-end ml-auto orange text-center" href="#">
+                            <p>(You have 250 tokens</p>
+                            Buy Tokens
+                        </a>
 					</nav>
 				</div>
 			</div>

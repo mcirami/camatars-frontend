@@ -133,6 +133,15 @@ img {
             background: $darkGray;
         }
     }
+
+    &.orange {
+        color: $white;
+        background: $orange;
+
+        &:hover {
+            background: $orangeHover;
+        }
+    }
 }
 
 .select.triangle_right {

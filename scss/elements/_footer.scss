@@ -1,0 +1,32 @@
+.footer {
+    background: url('../images/footer-bg.jpg') no-repeat;
+    background-size: cover;
+
+    p {
+        color: #bfbfbf;
+        font-size: 14px;
+    }
+
+    .nav-item {
+
+        a {
+            font-size: 14px;
+            color: $textGray;
+            padding: 0px 30px;
+
+            &:after {
+                content: '/';
+                position: absolute;
+                right: -3px;
+            }
+        }
+
+        &:last-child a {
+            padding-right: 0;
+
+            &:after {
+                content: '';
+            }
+        }
+    }
+}

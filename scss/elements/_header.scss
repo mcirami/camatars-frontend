@@ -7,21 +7,41 @@
 
         &.light_gray {
             background: $lightGray;
+
+            &:hover {
+                background: $darkGray;
+            }
         }
 
         &.dark_gray {
             background: $darkGray;
+
+            &:hover {
+                background: $lightGray;
+            }
         }
 
         &.blue {
             @include opensansbold;
             background: $blue;
+
+            &:hover {
+                background: $blueHover;
+            }
         }
 
         &.orange {
             background: $orange;
-            padding-left: 70px;
-            padding-right: 70px;
+            padding: 14px 55px;
+
+            p {
+                line-height: 1;
+                font-size: 12px;
+            }
+
+            &:hover {
+                background: $orangeHover;
+            }
         }
     }
 }

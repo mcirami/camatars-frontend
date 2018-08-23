@@ -1,4 +1,43 @@
 
 .home_page {
 
+    .image_gallery {
+
+        .content_wrap {
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .image_wrap {
+            @include span-columns(12);
+
+            .text_wrap {
+                @include span-columns(12);
+                color: $white;
+                position: absolute;
+                bottom: 0;
+                background: rgba(0,0,0,.5);
+                padding: 10px 0;
+
+                h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .col a {
+            @include opensansreg;
+            @include span-columns(12);
+            font-size: 16px;
+            padding: 3px 0;
+            display: block;
+            -webkit-border-top-left-radius: 0;
+            -moz-border-radius-topleft: 0;
+            border-top-left-radius: 0;
+            -webkit-border-top-right-radius: 0;
+            -moz-border-radius-topright: 0;
+            border-top-right-radius: 0;
+        }
+    }
 }
