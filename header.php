@@ -28,7 +28,7 @@
 	    <script type="text/javascript" src="<?php echo $webroot; ?>js/bootstrap/bootstrap-birthday.min.js"></script>
         <script type="text/javascript" src="<?php echo $webroot; ?>js/built.min.js"></script>
         <link rel="icon" type="image/x-icon" href="<?php echo $webroot; ?>favicon.ico" />
-
+        <script src='https://www.google.com/recaptcha/api.js'></script>
     </head>
 
     <body>
@@ -40,7 +40,9 @@
 					    <h5 class="modal-title" id="joinNowModalLabel">Create Your Free Account</h5>
 					    <p>You must be over 18 years old to register</p>
 					    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						    <span aria-hidden="true">&times;</span>
+						    <span aria-hidden="true">
+                                <img src="images/close-button.png" alt="">
+                            </span>
 					    </button>
 				    </div>
 				    <div class="modal-body">
@@ -73,11 +75,13 @@
 							    <div class="form-group col-md-6">
 								    <label for="inputGender">Gender</label>
 								    <select id="inputGender" class="form-control">
-									    <option>Male</option>
-									    <option>Female</option>
+                                        <option></option>
+									    <option value="male">Male</option>
+									    <option value="female">Female</option>
 								    </select>
 							    </div>
 						    </div>
+                            <div class="g-recaptcha" data-sitekey="6LcEF2wUAAAAAO2_HLRdMFIhcnJVY25ASf4JQFTt"></div>
 						    <div class="form-group">
 							    <div class="form-check">
 								    <input class="form-check-input" type="checkbox" id="agreeCheck">

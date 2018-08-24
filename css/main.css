@@ -101,7 +101,7 @@ img {
   min-width: 300px; }
 
 .btn {
-  padding: 10px 20px;
+  padding: 6px 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -296,11 +296,90 @@ header .user_info .nav-item a {
       .header_nav .navbar-expand-md .navbar-nav .nav-link.orange:hover {
         background: #cc5b00; }
 
-#joinNowModal .birthday_select .input-group-addon {
+#joinNowModal .modal-dialog {
+  max-width: 600px; }
+  #joinNowModal .modal-dialog .modal-content {
+    padding: 20px; }
+#joinNowModal .modal-header {
+  display: block !important;
+  border-bottom: none; }
+  #joinNowModal .modal-header .modal-title {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    font-family: 'opensansreg', sans-serif;
+    font-weight: 300;
+    color: #1c85bd;
+    font-size: 24px; }
+    #joinNowModal .modal-header .modal-title:last-child {
+      margin-right: 0; }
+  #joinNowModal .modal-header p {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    font-family: 'opensansreg', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #888686; }
+    #joinNowModal .modal-header p:last-child {
+      margin-right: 0; }
+#joinNowModal .close {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
+  @media screen and (max-width: 767px) {
+    #joinNowModal .close {
+      top: -14px;
+      right: -14px; } }
+#joinNowModal form label {
+  color: #888686;
+  font-family: 'opensanssemibold', sans-serif;
+  font-weight: 600;
+  font-size: 14px; }
+  @media screen and (max-width: 767px) {
+    #joinNowModal form label {
+      font-size: 12px; } }
+  #joinNowModal form label sup {
+    color: #f53b3b; }
+#joinNowModal form input {
+  height: 40px;
+  border-color: #dcdbdb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  @media screen and (max-width: 767px) {
+    #joinNowModal form input {
+      height: 35px; } }
+#joinNowModal form select {
+  height: 40px;
+  border-color: #dcdbdb;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+  @media screen and (max-width: 767px) {
+    #joinNowModal form select {
+      height: 35px; } }
+  #joinNowModal form select:after {
+    content: '';
+    background: url("../images/triangle-down.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 10px; }
+#joinNowModal form .birthday_select .input-group-addon {
   width: 32%;
   margin-right: 2%; }
-  #joinNowModal .birthday_select .input-group-addon:last-child {
+  #joinNowModal form .birthday_select .input-group-addon:last-child {
     margin-right: 0; }
+#joinNowModal form .form-check-label {
+  margin-left: 10px;
+  font-size: 12px;
+  padding-top: 12px; }
+  @media screen and (max-width: 767px) {
+    #joinNowModal form .form-check-label {
+      font-size: 10px; } }
 
 .footer {
   background: url("../images/footer-bg.jpg") no-repeat;
