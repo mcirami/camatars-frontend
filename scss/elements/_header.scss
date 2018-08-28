@@ -6,11 +6,23 @@ header {
         }
     }
 
+    .login {
+        color: $blue;
+
+        @include media($mobile) {
+            margin: auto;
+        }
+
+        &:hover {
+            color: $blueHover;
+        }
+    }
+
     .btn.black {
         padding: 10px 70px;
 
         @include media($mobile) {
-            width: 100%;
+            margin: auto;
         }
     }
 
@@ -106,7 +118,7 @@ header {
                 }
 
                 &.light_gray {
-                    background: $lightGray;
+                    background: $lighterGray;
 
                     &:hover {
                         background: $darkGray;
@@ -117,7 +129,7 @@ header {
                     background: $darkGray;
 
                     &:hover {
-                        background: $lightGray;
+                        background: $lighterGray;
                     }
                 }
 
@@ -147,119 +159,6 @@ header {
                         background: $orangeHover;
                     }
                 }
-            }
-        }
-    }
-}
-
-#joinNowModal {
-
-    .modal-dialog {
-        max-width: 600px;
-
-        .modal-content {
-            padding: 20px;
-        }
-    }
-
-    .modal-header {
-        display: block !important;
-        border-bottom: none;
-
-        .modal-title {
-            @include span-columns(12);
-            @include opensansreg;
-            color: $blue;
-            font-size: 24px;
-        }
-
-        p {
-            @include span-columns(12);
-            @include opensansreg;
-            font-size: 14px;
-            color: $textGray;
-        }
-    }
-
-    .close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-
-        @include media($mobile) {
-            top: -14px;
-            right: -14px;
-        }
-    }
-
-    form {
-
-        label {
-            color: $textGray;
-            @include opensanssemibold;
-            font-size: 14px;
-
-            @include media($mobile) {
-                font-size: 12px;
-            }
-
-            sup {
-                color: $red;
-            }
-        }
-        
-        input {
-            height: 40px;
-            border-color: #dcdbdb;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-
-            @include media($mobile) {
-                height: 35px;
-            }
-        }
-
-        select {
-            height: 40px;
-            border-color: #dcdbdb;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            border-radius: 4px;
-
-            @include media($mobile) {
-                height: 35px;
-            }
-
-            &:after {
-                content: '';
-                background: url('../images/triangle-down.png') no-repeat;
-                width: 20px;
-                height: 20px;
-                position: absolute;
-                right: 10px;
-            }
-        }
-
-        .birthday_select {
-
-            .input-group-addon {
-                width: 32%;
-                margin-right: 2%;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
-        .form-check-label {
-            margin-left: 10px;
-            font-size: 12px;
-            padding-top: 12px;
-
-            @include media($mobile) {
-                font-size: 10px;
             }
         }
     }

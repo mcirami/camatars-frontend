@@ -52,13 +52,4 @@
             }
         }
     }
-
-    .banner {
-        img {
-            @include media($mobile) {
-                max-width: 100px;
-                float: none;
-            }
-        }
-    }
 }

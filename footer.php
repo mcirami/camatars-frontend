@@ -1,3 +1,7 @@
+
+		</div><!-- col-12 (from header) -->
+	</div><!-- row (from header) -->
+
     <div class="footer row pt-5 pb-5">
         <div class="container">
             <div class="row row d-flex justify-content-between">

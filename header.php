@@ -32,85 +32,26 @@
     </head>
 
     <body>
-    <!-- Modal -->
-	    <div class="modal fade" id="joinNowModal" tabindex="-1" role="dialog" aria-labelledby="joinNowModalLabel" aria-hidden="true">
-		    <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-				    <div class="modal-header">
-					    <h5 class="modal-title" id="joinNowModalLabel">Create Your Free Account</h5>
-					    <p>You must be over 18 years old to register</p>
-					    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						    <span aria-hidden="true">
-                                <img src="images/close-button.png" alt="">
-                            </span>
-					    </button>
-				    </div>
-				    <div class="modal-body">
-					    <form>
-						    <div class="form-row">
-							    <div class="form-group col-md-6">
-								    <label for="inputUsername">Username: <sup>*</sup></label>
-								    <input type="text" class="form-control" id="inputUsername">
-							    </div>
-							    <div class="form-group col-md-6">
-								    <label for="inputPassword">Password: <sup>*</sup></label>
-								    <input type="password" class="form-control" id="inputPassword">
-							    </div>
-						    </div>
-						    <div class="form-row">
-							    <div class="form-group col-md-6">
-								    <label for="inputEmail">Email address:</label>
-								    <input type="text" class="form-control" id="inputEmail">
-							    </div>
-							    <div class="form-group col-md-6">
-								    <label for="inputCell">Cell Phone:</label>
-								    <input type="text" class="form-control" id="inputCell">
-							    </div>
-						    </div>
-						    <div class="form-row">
-							    <div class="form-group col-md-6 birthday_select">
-								    <label for="inputBirthday">Birthday: <sup>*</sup></label>
-								    <div id="birthday_select"></div>
-							    </div>
-							    <div class="form-group col-md-6">
-								    <label for="inputGender">Gender</label>
-								    <select id="inputGender" class="form-control">
-                                        <option></option>
-									    <option value="male">Male</option>
-									    <option value="female">Female</option>
-								    </select>
-							    </div>
-						    </div>
-                            <div class="g-recaptcha" data-sitekey="6LcEF2wUAAAAAO2_HLRdMFIhcnJVY25ASf4JQFTt"></div>
-						    <div class="form-group">
-							    <div class="form-check">
-								    <input class="form-check-input" type="checkbox" id="agreeCheck">
-								    <label class="form-check-label" for="agreeCheck">
-									    I have read and agree to the <a href="#">terms and conditions</a> and
-									    <a href="#">privacy policy</a>
-								    </label>
-							    </div>
-						    </div>
-						    <button type="submit" class="btn orange">Join For Free</button>
-					    </form>
-				    </div>
-			    </div>
-		    </div>
-	    </div>
-
 		<header>
 			<div class="row no-gutters">
 				<div class="container">
 
-					<div class="row no-gutters d-flex justify-content-center justify-content-md-between pt-3 pb-3 pt-md-5 pb-md5">
+					<div class="row no-gutters d-flex justify-content-center justify-content-md-between pt-3 pb-3 pt-md-5 pb-md-5">
 						<div class="col-8 col-md-3 align-self-center align-self-md-start text-center">
-							<img class="mx-auto float-none" src="images/logo.png" alt="">
+							<a href="/"><img class="mx-auto float-none" src="images/logo.png" alt=""></a>
 						</div>
-					<!-- LOGGED OUT -->
-						<a data-toggle="modal" href="#joinNowModal" class="mt-4 mt-md-0 text-uppercase btn btn-lg black align-self-center">Join Now</a>
-					<!-- LOGGED OUT -->
+						<!-- LOGGED OUT -->
+						<div class="col-12 col-md-9 mt-4 mt-md-0 text-center text-md-right">
+							<div class="row no-gutters">
+								<a data-toggle="modal" href="#loginModal" class="mb-2 text-uppercase login ml-auto">Login</a>
+							</div>
+							<div class="row no-gutters">
+								<a data-toggle="modal" href="#joinNowModal" class="text-uppercase btn btn-lg black align-self-center d-inline-block ml-md-auto">Join Now</a>
+							</div>
+						</div>
+						<!-- LOGGED OUT -->
 
-					<!-- LOGGED IN -->
+						<!-- LOGGED IN -->
 						<div class="d-none col-12 col-md-9 align-self-end user_info mt-4 mt-md-0">
 							<p class="text-center text-md-right">Welcome, <span>jasmine kate</span></p>
 							<ul class="nav justify-content-center justify-content-md-end mt-2 mt-lg-4">
@@ -125,7 +66,7 @@
 								</li>
 							</ul>
 						</div>
-					<!-- LOGGED IN -->
+						<!-- LOGGED IN -->
 
 					</div>
 
@@ -165,5 +106,115 @@
 
 		</header>
 
+		<!-- JOIN NOW MODAL -->
+		<div class="modal fade" id="joinNowModal" tabindex="-1" role="dialog" aria-labelledby="joinNowModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="joinNowModalLabel">Create Your Free Account</h5>
+						<p>You must be over 18 years old to register</p>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						    <span aria-hidden="true">
+                                <img src="images/close-button.png" alt="">
+                            </span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputUsername">Username: <sup>*</sup></label>
+									<input type="text" class="form-control" id="inputUsername">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputPassword">Password: <sup>*</sup></label>
+									<input type="password" class="form-control" id="inputPassword">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail">Email address:</label>
+									<input type="text" class="form-control" id="inputEmail">
+								</div>
+								<div class="form-group col-md-6">
+									<label for="inputCell">Cell Phone:</label>
+									<input type="text" class="form-control" id="inputCell">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6 birthday_select">
+									<label for="inputBirthday">Birthday: <sup>*</sup></label>
+									<div id="birthday_select"></div>
+								</div>
+								<div class="form-group col-md-6 gender">
+									<label for="inputGender">Gender</label>
+									<select id="inputGender" class="form-control">
+										<option></option>
+										<option value="male">Male</option>
+										<option value="female">Female</option>
+									</select>
+								</div>
+							</div>
+							<div class="g-recaptcha" data-sitekey="6LcEF2wUAAAAAO2_HLRdMFIhcnJVY25ASf4JQFTt"></div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="agreeCheck">
+									<label class="form-check-label" for="agreeCheck">
+										I have read and agree to the <a href="#">terms and conditions</a> and
+										<a href="#">privacy policy</a>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="btn orange">Join For Free</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- JOIN NOW MODAL -->
 
+		<!-- LOGIN MODAL -->
 
+		<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="logineModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="joinNowModalLabel">Login</h5>
+						<p>Please sign in using the form below</p>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						    <span aria-hidden="true">
+                                <img src="images/close-button.png" alt="">
+                            </span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-group">
+								<label for="loginUsername">Username: <sup>*</sup></label>
+								<input type="text" class="form-control" id="loginUsername">
+							</div>
+							<div class="form-group">
+								<label for="inputPassword1">Password: <sup>*</sup></label>
+								<input type="password" class="form-control" id="inputPassword1">
+							</div>
+							<div class="form-group form-check">
+								<input type="checkbox" class="form-check-input" id="keepCheck">
+								<label class="form-check-label" for="keepCheck">Keep me logged in.</label>
+							</div>
+							<button type="submit" class="btn orange">Login</button>
+							<div class="form_row mt-4 mb-2">
+								<a href="#">Create Free Account</a>
+							</div>
+							<div class="form_row">
+								<a href="#">Forgot password?</a>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- LOGIN MODAL -->
+
+		<div class="row page_wrapper"> <!-- closes in footer -->
+			<div class="col-12"><!-- closes in footer -->

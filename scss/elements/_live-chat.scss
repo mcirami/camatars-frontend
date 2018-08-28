@@ -1,0 +1,248 @@
+.live_chat {
+
+    .video_wrap {
+        background: $lightGray;
+        height: 100%;
+
+        .heading {
+
+            h3 {
+                color: $orange;
+
+                @include media($desktop) {
+                    font-size: 14px;
+                }
+            }
+
+            a {
+                font-size: 16px;
+                padding: 4px 12px;
+
+                @include media($desktop) {
+                    font-size: 14px;
+                }
+
+                @include media($tablet) {
+                    font-size: .8em;
+                }
+
+                &.prev {
+                    padding-left: 24px;
+
+                    &:before {
+                        content: '';
+                        background: url('../images/double-arrow-left.png') no-repeat;
+                        position: absolute;
+                        background-size: 100%;
+                        width: 15px;
+                        height: 15px;
+                        left: 6px;
+                        top: 9px;
+
+                        @include media($desktop) {
+                            top: 10px;
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        @include media($tablet) {
+                            top: 8px;
+                        }
+                    }
+                }
+
+                &.next {
+                    padding-right: 24px;
+
+                    &:after {
+                        content: '';
+                        background: url('../images/double-arrow-right.png') no-repeat;
+                        position: absolute;
+                        background-size: 100%;
+                        width: 15px;
+                        height: 15px;
+                        right: 6px;
+                        top: 10px;
+
+                        @include media($desktop) {
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        @include media($tablet) {
+                            top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+
+        p {
+            font-size: 12px;
+            color: $gray;
+        }
+
+        .btn {
+            padding: 5px;
+            font-size: 16px;
+
+            @include media($desktop) {
+                font-size: 14px;
+            }
+        }
+
+        form {
+            .form-control {
+                @include media($desktop) {
+                    height: 35px;
+                    margin-right: -10px;
+                }
+
+                @include media($tablet) {
+                    margin-right: 0;
+                }
+            }
+
+            .btn {
+                padding: 5px;
+                font-size: 16px;
+
+                @include media($desktop) {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.chat_wrap {
+    padding: 0;
+
+    .content_wrap {
+        background: $lightGray;
+        height: 100%;
+    }
+
+    .nav-tabs {
+        border: none;
+
+        .nav-item {
+            margin-right: 2.3%;
+            margin-bottom: -2px;
+
+            @include media($tablet) {
+                margin-right: 0;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            .nav-link {
+                background: #d1d1d1;
+                color: $darkGray;
+                font-size: 14px;
+
+                @include media($tablet) {
+                    font-size: .7em;
+                    padding: .5rem 0.7rem;
+                }
+
+                &:hover {
+                    background: $white;
+                }
+
+                &.active {
+                    background: $white;
+                    border: none;
+                }
+
+                &.tokens {
+                    background: $orange;
+                    color: $white;
+
+                    &:hover {
+                        background: $orangeHover;
+                    }
+
+                    &.active {
+                        background: $orangeHover;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .chat_window {
+        background: $white;
+        padding: 5px;
+        height: 53.5vh;
+        overflow-y: scroll;
+
+        @include media($desktop) {
+            height: 42.5vh;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .user_notification {
+            background: $yellow;
+            color: $black;
+            line-height: 1;
+            display: inline-block;
+
+            span {
+                color: $orangeHover;
+            }
+        }
+
+        .model_notification {
+            color: $blue;
+
+            span {
+                color: $orangeHover;
+            }
+        }
+
+        .model_text {
+            color: $darkGray;
+
+            span {
+                color: $orangeHover;
+            }
+        }
+
+        .user_text {
+            color: $darkGray;
+
+            span {
+                color: $gray;
+            }
+        }
+    }
+
+    .submit_chat {
+        background: $white;
+
+        input {
+            height: 32px;
+            border: none;
+            width: 74%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            font-size: 16px;
+            padding: 4px 5px;
+            float: right;
+            width: 24%;
+            display: block;
+        }
+    }
+}
