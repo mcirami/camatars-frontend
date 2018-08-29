@@ -18,7 +18,7 @@ include 'header.php';
 					</div>
 					<div class="form-group col-md-6 birthday_select">
 						<label for="inputBirthday">Birthday: <sup>*</sup></label>
-						<div id="birthday_select2"></div>
+						<div class="bday_select"></div>
 					</div>
 				</div>
 				<div class="form-row">

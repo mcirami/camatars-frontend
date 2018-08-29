@@ -158,16 +158,16 @@ include 'header.php';
 								</div>
 							</div>
 						</div><!-- tab-content -->
-					</div>
+					</div><!-- content_wrap -->
 				</div> <!-- chat_wrap -->
 			</div><!-- row -->
 
 		</div><!-- col-12 -->
 		<?php
-			include 'side-bar.php';
+			include 'sidebar.php';
 		?>
-	</div><!-- home_page -->
-</div>
+	</div><!-- live_chat -->
+</div><!-- container -->
 <?php
 
 include 'footer.php';

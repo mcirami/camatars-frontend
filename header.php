@@ -144,7 +144,7 @@
 							<div class="form-row">
 								<div class="form-group col-md-6 birthday_select">
 									<label for="inputBirthday">Birthday: <sup>*</sup></label>
-									<div id="birthday_select"></div>
+									<div class="bday_select"></div>
 								</div>
 								<div class="form-group col-md-6 gender">
 									<label for="inputGender">Gender</label>
@@ -155,7 +155,7 @@
 									</select>
 								</div>
 							</div>
-							<div class="g-recaptcha" data-sitekey="6LcEF2wUAAAAAO2_HLRdMFIhcnJVY25ASf4JQFTt"></div>
+							<div class="g-recaptcha mt-5" data-sitekey="6LcEF2wUAAAAAO2_HLRdMFIhcnJVY25ASf4JQFTt"></div>
 							<div class="form-group">
 								<div class="form-check">
 									<input class="form-check-input" type="checkbox" id="agreeCheck">

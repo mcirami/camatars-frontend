@@ -7,14 +7,15 @@ header {
     }
 
     .login {
-        color: $blue;
+        color: $orange;
+        text-decoration: underline;
 
         @include media($mobile) {
             margin: auto;
         }
 
         &:hover {
-            color: $blueHover;
+            color: $orangeHover;
         }
     }
 

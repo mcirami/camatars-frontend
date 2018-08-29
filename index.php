@@ -129,7 +129,7 @@ include 'header.php';
 	        </div>
 
 		    <?php
-		        include 'side-bar.php';
+		        include 'sidebar.php';
 		    ?>
 	    </div><!-- home_page -->
 	</div>
